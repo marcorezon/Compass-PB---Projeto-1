@@ -1,0 +1,156 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.half-screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1320px;
+    height: 760px;
+}
+
+.form-template {
+    margin-bottom: 101px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-self: center;
+}
+.image-container {
+    margin-top: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+.form-content {
+    color: #000;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form1-select {
+    margin-top: 0px;
+    margin-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.form2-select {
+    margin-top: 0px;
+    margin-bottom: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.form3-text {
+    margin-top: 0px;
+    margin-bottom: 62px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 466px;
+}
+.form-fieldset {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+select {
+    margin-top: 8px;
+    width: 459px;
+    height: 52px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    
+    color: #000;
+    text-align: center;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}   
+
+[name="which-market"] {
+    appearance: unset;
+    vertical-align: text-top;
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+    background-color: #3EB25E4D;
+    margin-right: 11px;
+}
+[name="information-source"] {
+    appearance: unset;
+    vertical-align: bottom;
+    border-radius: 5px;
+    width: 26px;
+    height: 26px;
+    background-color: #3EB25E4D;
+    margin-right: 24px;
+}
+.investiment-details {
+    margin-top: 20px;
+    margin-bottom: 61px;
+    width: 459px;
+    height: 225px;
+    flex-shrink: 0;
+    resize: none;
+    align-self: center;
+
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.same-line {
+    margin: 0px;
+    margin-bottom: 16px;
+    width:  532px;
+}
+
+.form-button {
+    width: 199px;
+    height: 35.554px;
+    border: 35px;
+    margin-bottom: 5px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    background: #3EB25E;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.radio-paragraph {
+    margin-block: 12px;
+}
+
+.checkbox-paragraph {
+    margin-block: 13px;
+}
+
+.next {
+    margin-left: 15px;
+}
+
+.skip {
+    width: 418px;
+    margin-bottom: 0px;
+}
+
+input:checked {
+    opacity: 1;
+    background-color:  #3EB25E;
+}
+
+button:hover{
+    color: #000;
+    background-color: #FFFF7D;
+}

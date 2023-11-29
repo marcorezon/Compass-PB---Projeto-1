@@ -1,0 +1,71 @@
+.half-screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 760px;
+}
+
+.introduction-image {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+}
+
+.introduction, .introduction-subordinate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.right-all-content {
+    width: 443px;
+}
+.introduction-header {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.introduction-content {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.same-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 43px;
+}
+
+.introduction-button {
+    width: 199px;
+    height: 35.554px;
+    border: 35px;
+    margin-bottom: 5px;
+    flex-shrink: 0;
+    border-radius: 35px;
+    background: #3EB25E;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+button:hover{
+    color: #000;
+    background-color: #FFFF7D;
+}
