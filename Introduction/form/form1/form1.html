@@ -8,10 +8,15 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <main class="half-screen">
-        <p class="image-container"><img class="form-image" src="form1 images/two.svg" alt="" /></p>
-        <section class="form-template">
-            <form class="form-content">
+    <main>
+
+        <figure class="left-container">
+            <img src="form1 images/two.svg" alt="**"/>
+        </figure>
+
+        <section class="right-container">
+            <form>
+
                 <p class="form1-select">
                     <label><b>What is the status of your account?</b></label>
                     <select>
@@ -30,11 +35,14 @@
                     <p class="radio-paragraph"><label><input type="radio" name="which-market"> cryptocurrency market</label></p>
                 </fieldset>
 
-                <p class="same-line">
+                <div class="inline-button">
                     <button type="button" class="form-button">Back</button>
                     <button type="button" class="form-button next">Next</button>
-                </p>
-                <button class="form-button skip">Skip</button>
+                </div>
+
+                <div class="last-button-container">
+                    <button class="form-button long-button">Skip</button>
+                </div>
 
             </form>
         </section>
