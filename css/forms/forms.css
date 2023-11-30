@@ -1,14 +1,21 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
 main {
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+}
+img {
+    max-width: 552.513px;
+    max-'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''height: 528.015px;
 }
 
 .left-container {
     margin: 0 0 0 0;
-    margin-bottom: 21.20%;   
+    margin-bottom: 21.9%;   
     padding: 0 0 0 0;
     display: flex;
     align-items: flex-end;
@@ -16,13 +23,13 @@ main {
 }
 
 .right-container {
-    margin-left: 93.99px;
+    margin-left: 14.68%;
     display: flex;
     align-items: flex-end;
 }
+
 form {
-    margin-bottom: 101px;
-    margin-top: 22.76%;
+    margin-bottom: 18.7%;
     color: #000;
     font-size: 26px;
     font-style: normal;
@@ -178,7 +185,7 @@ button:hover{
 .input-section {
     margin-bottom: 44px;
 }
-@media  (max-width: 1140px) {
+@media  (max-width: 1140px) and (min-height: 1020px) {
     main {
         grid-template-columns: unset;
         grid-template-rows: 1fr 1fr;
@@ -191,15 +198,130 @@ button:hover{
     }
     
     .right-container {
-        margin-left: 53.99px;
-        align-items: flex-start;
-        justify-content: center;        
+        margin: 0 0 0 0;
+        align-items: center;
+        justify-content: center;
     }
+
     form {
-        margin-bottom: 51px;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media  (max-width: 1140px) and (min-height: 653px) and (max-height: 1000px) {
+    main {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr;
+    }
+    .left-container {
+        margin: 0 0 0 0;    
+        padding: 0 0 0 0;
+        display: flex;
+        justify-content: center
+    }
+    
+    .right-container {
+        margin: 0 0 0 0;
+        align-items: center;
+        justify-content: center;
     }
     img {
         height: 87.7%;
         width: 78%;
+    }
+    form {
+        margin-bottom: 53px;    
+        font-size: 16px;
+        line-height: 21px; 
+    }
+    select {
+        width: 259px;
+        height: 23px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+    
+    .checkbox-paragraph{
+        margin-block: 7px;
+    } 
+    .radio-paragraph {
+        margin-block: 5px;
+    }
+
+    [name="which-market"] {
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+    }
+
+    [name="information-source"] {
+        width: 13.818px;
+        height: 13.818px;
+        margin-right: 8.18px;
+    }
+    .investiment-details {
+        margin-top: 10px;
+        width: 278px;
+        height: 131px;
+    }
+    .form-fieldset {
+        margin-bottom: 21px;
+        justify-items: center;
+    }
+    .special-input label {
+        margin-top: 14px;
+        margin-bottom: 7px;
+        margin-left: 10px;
+    }
+    .special-input {
+        margin-left: 0px;
+    }
+    .special {
+        width: 60.5vw;
+        height: 33px;
+        flex-shrink: 0;
+    } 
+    .input-section {
+        margin-top: 4px;
+        margin-bottom: 34px;
+    }
+    .inline-button, .last-button-container {
+        display: flex;
+        justify-content: center;
+    }
+    .form-button {
+        width: 142px;
+        height: 26px;
+    
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .long-button {
+        width: 302px;
+    }
+    .form1-select, .form2-select {
+        margin-bottom: 10px;
+    }
+    .form3-text {
+        margin-bottom: 23px;
+        display: flex;
+        align-items: center;
+    }
+    .form3-text label {
+        width: 261px;
+    }
+    .last-button-container {
+        margin-top: 7px;
+    }
+}
+@media (max-width: 479px) {
+
+    .form-button {
+        width: 29.583vw;
+    }
+    .long-button {
+        width: 58vw;
     }
 }
