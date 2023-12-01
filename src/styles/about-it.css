@@ -112,10 +112,19 @@ button:hover{
     main {
         margin-top: 40%;
     }
+    .right-container {
+        margin-inline: 20%;
+    }
     .same-line {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
         gap: 20px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .introduction-content {
+        font-size: 13px;
     }
 }
