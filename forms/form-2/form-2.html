@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../src/styles/all.min.css">
+    <link rel="stylesheet" href="../../src/styles/forms.css">
+</head>
+<body>
+    <main>
+
+        <figure class="left-container">
+            <img class="form2-image" src="relative-media/three.svg" alt="**"/>
+        </figure>
+
+        <section class="right-container">
+            <form>
+
+                <p class="form2-select">
+                    <label for="investing-motivation"><b>How do you decided to invest?</b></label>
+                    <select id="investing-motivation">
+                        <option>I have not invested yet</option>
+                        <option>Due to Lack of money</option>
+                        <option>To achieve a financial goal</option>
+                        <option>Thinking in the fu</option>
+                    </select>
+                </p>
+
+                <fieldset class="form-fieldset"> 
+                    <legend><b>What resources have you used or are you<br> using for your training?</b></legend>
+                    <p class="checkbox-paragraph">
+                        <label><input type="checkbox" name="information-source" value="Books and articles"/>Books and articles</label>
+                    </p>
+                    <p class="checkbox-paragraph">
+                        <label><input type="checkbox" name="information-source" value="Youtube tutorial videos"/>Youtube tutorial videos</label>
+                    </p>
+                    <p class="checkbox-paragraph">
+                        <label><input type="checkbox" name="information-source" value="online of face to face courses"/>online of face to face courses</label>
+                    </p>
+                    <p class="checkbox-paragraph">
+                        <label><input type="checkbox" name="information-source" value="experience with little investiment"/>experience with little investiment</label>
+                    </p>                 
+                </fieldset>
+
+                <div class="inline-button">
+                    <button type="button" class="form-button"onclick="back(1)">Back</button>
+                    <button type="button" class="form-button next" onclick="next(3)">Next</button>   
+                </div>
+
+                <div class="last-button-container">
+                    <button type="button" class="form-button long-button" onclick="skip(3)">Skip</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <script src="../../src/functions/navigation.js"></script>
+</body>
+</html>

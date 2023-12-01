@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../../css/forms/forms.css">
+    
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../src/styles/all.min.css">
+    <link rel="stylesheet" href="../../src/styles/forms.css">
 </head>
 <body>
     <main>
 
         <figure class="left-container">
-            <img class="form3-image" src="form3 images/four.svg" alt="**"/>
+            <img class="form3-image" src="relative-media/four.svg" alt="**"/>
         </figure>
 
         <section class="right-container">
@@ -20,20 +22,22 @@
                 <p class="form3-text">
                     <label><b>If you or someone close to you has already made a loss on the 
                         investment, write down the details</b></label>
-                    <textarea class="investiment-details"></textarea>
+                    <textarea id="investiment-details" maxlength="130" required></textarea>
                 </p>
 
                 <div class="inline-button">
-                    <button class="form-button">Back</button>
-                    <button class="form-button next">Next</button>
+                    <button type="button" class="form-button" onclick="back(2)">Back</button>
+                    <button type="button" class="form-button next" onclick="next(4)">Next</button>
                 </div>
 
                 <div class="last-button-container">
-                    <button class="form-button long-button">Skip</button>
+                    <button type="button" class="form-button long-button" onclick="skip(4)">Skip</button>
                 </div>
 
             </form>
         </section>
     </main>
+    <script src="../../src/functions/style-controller.js"></script>
+    <script src="../../src/functions/navigation.js"></script>
 </body>
 </html>

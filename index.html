@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/index/index.css">
+    <title>Welcome</title>
+
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="templates/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/index.css">
 </head>
 <body>
     <main>
-        <figure class="left-container"><img src="index-images/zero.svg" alt="Homem-com-capa-e-roupa-social"/></figure>
+        <figure class="left-container"><img src="index-relative-media/zero.svg" alt="**"/></figure>
         
         <section class="right-container">
 
             <h1>welcome</h1>
             <p class="index-content">Thanks for participating in the poll</p>
-            <button id="to-introduction-button" class="index-button" onmouseenter="switchContent('to-introduction-button','Just go Ahead')" onmouseleave="getContentBack('to-introduction-button', 'Let´s go')">Let's go</button>
+            <button id="001" class="index-button" onclick="aboutIt()">Let's go</button>
         </section>
     </main>
-    <script src="JS.js"></script>
+    <script src="src/functions/navigation.js"></script>
+    <script src="src/functions/style-controller.js"></script>
 </body>
 </html>

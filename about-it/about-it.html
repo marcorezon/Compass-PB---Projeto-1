@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/introduction/introduction.css">
+    <title>About it</title>
+
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../src/styles/all.min.css">
+    <link rel="stylesheet" href="../src/styles/about-it.css">
 </head>
 <body>
     <main>
-        <figure class="left-container"><img src="introduction-images/one.svg" alt="homem-com-roupa-social-confuso,"></figure>
+        <figure class="left-container"><img src="relative-media/one.svg" alt="**"></figure>
 
         <section class="right-container">
 
@@ -22,11 +24,11 @@
                 </p>
                 
                 <span class="same-line">
-                    <button type="button" id="back-to-welcome-button" class="introduction-button">Back to Home</button>
-                    <button type="button" id="to-form-1-button" class="introduction-button">Fill out the form</button>  
+                    <button type="button" class="introduction-button" onclick="home()">Back to Home</button>
+                    <button type="button" class="introduction-button" onclick="toForms()">Fill out the form</button>  
                 </span>            
         </section>
     </main>
-    <script src="../JS.js"></script>
+    <script src="../src/functions/navigation.js"></script>
 </body>
 </html>

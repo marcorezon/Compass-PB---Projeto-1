@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../src/styles/all.min.css">
+    <link rel="stylesheet" href="../../src/styles/forms.css">
+</head>
+<body>
+    <main>
+
+        <figure class="left-container">
+            <img class="form1-image" src="relative-media/two.svg" alt="**"/>
+        </figure>
+
+        <section class="right-container">
+            <form>
+
+                <p class="form1-select">
+                    <label for="account-status"><b>What is the status of your account?</b></label>
+                    <select id="account-status">
+                        <option>I have not created an account yet</option>
+                        <option>Working fine</option>
+                        <option>I have lost access to my account</option>
+                    </select>
+                </p>
+
+                <fieldset class="form-fieldset">
+                    <legend><b>In which financial markets do you operate?</b></legend>
+                    <p class="radio-paragraph"><label><input type="radio" name="which-market" value="stock market"> stock market</label></p>
+                    <p class="radio-paragraph"><label><input type="radio" name="which-market" value="foreign exchange"> foreign exchange</label></p>
+                    <p class="radio-paragraph"><label><input type="radio" name="which-market" value="commodity"> commodity</label></p>
+                    <p class="radio-paragraph"><label><input type="radio" name="which-market" value="bond market"> bond market</label></p>
+                    <p class="radio-paragraph"><label><input type="radio" name="which-market" value="cryptocurrency market"> cryptocurrency market</label></p>
+                </fieldset>
+
+                <div class="inline-button">
+                    <button type="button" class="form-button" onclick="backToAboutIt()">Back</button>
+                    <button type="button" class="form-button next" onclick="next(2)">Next</button>
+                </div>
+
+                <div class="last-button-container">
+                    <button type="button" class="form-button long-button" onclick="skip(2)">Skip</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <script src="../../src/functions/style-controller.js"></script>
+    <script src="../../src/functions/navigation.js"></script>
+    
+</body>
+</html>
