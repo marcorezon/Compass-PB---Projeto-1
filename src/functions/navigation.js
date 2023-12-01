@@ -18,7 +18,7 @@ function toForms() {
 }
 
 function backToAboutIt() {
-   window.location.href = "../../about-it/about-it.html";
+   window.location.href = "../../about-it/about-it.html"; 
 }
 function back(previousPos) {
    window.location.href = '../form-' + previousPos + '/' + 'form-' + previousPos + '.html';
@@ -41,13 +41,13 @@ function skip(nextPos) {
 function finish() {
 
    if(signerName.value.length < 1) {
-      return false;
+      return;
    }
    if (signerEmail.value.length < 1) {
-      return false;
+      return;
    }
    if (signerAge.value.length < 1) {
-      return false;
+      return;
    }
    localStorage.setItem("name", signerName.value);
    localStorage.setItem("email", signerEmail.value);
@@ -68,22 +68,9 @@ function form3Validation() {
    if (investimentDetails.value.length >= 1) {
       localStorage.setItem("investiment details", investimentDetails.value);
       return true;
-   } else {
-      investimentDetails.outerHTML = "<p>min characters: 1<br>max characters: 130</p>";
    }
 }
 
-function successDisplay() {
-   document.getElementById("maini").innerHTML += "<p>Account status: " + localStorage.getItem("account status")+ "</p>";
-   document.getElementById("maini").innerHTML += "<p>Which markets operates: " + localStorage.getItem("which market operates") + "</p>";
-   document.getElementById("maini").innerHTML += "<p>Investing motivation: " + localStorage.getItem("investing motivation") + "</p>";
-   document.getElementById("maini").innerHTML += "<p>Information source: " + localStorage.getItem("information source") + "</p>";
-   document.getElementById("maini").innerHTML += "<p>Investiment details: " + localStorage.getItem("investiment details") + "</p>";
-   document.getElementById("maini").innerHTML += "<p>Name: " + localStorage.getItem("name") + "</p>";
-   document.getElementById("maini").innerHTML += "<p>Email: " + localStorage.getItem("email") +"</p>";
-   document.getElementById("maini").innerHTML += "<p>Age: " + localStorage.getItem("age") + "</p>";
-
-}
 
 
 

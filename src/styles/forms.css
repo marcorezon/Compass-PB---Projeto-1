@@ -187,6 +187,17 @@ button:hover{
 .input-4-section {
     margin-bottom: 44px;
 }
+.textareaLessThanShould {
+    margin-bottom: 0px;
+    align-self: center;
+    text-align: center;
+    width: 50%;
+    font-size: 50%;
+    opacity: 0.6;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
 @media  (max-width: 1140px) and (min-height: 1020px) {
     main {
         grid-template-columns: unset;
@@ -227,10 +238,6 @@ button:hover{
         margin: 0 0 0 0;
         align-items: center;
         justify-content: center;
-    }
-    img {
-        height: 87.7%;
-        width: 78%;
     }
     form {
         margin-bottom: 53px;    
@@ -282,6 +289,7 @@ button:hover{
     }
     .input-4 {
         width: 60.5vw;
+        font-size: 16px;
         height: 33px;
         flex-shrink: 0;
     } 
@@ -318,12 +326,16 @@ button:hover{
         margin-top: 7px;
     }
 }
-@media (max-width: 479px) {
+@media (max-width: 481px) {
 
     .form-button {
         width: 29.583vw;
     }
     .long-button {
         width: 58vw;
+    }
+    #investiment-details {
+        width: 278px;
+        height: 131px;
     }
 }

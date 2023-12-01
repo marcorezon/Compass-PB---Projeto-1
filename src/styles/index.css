@@ -17,7 +17,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
 }
 
@@ -68,7 +68,7 @@ button:hover{
     main{
         display: grid;
         grid-template-columns: unset;
-        grid-template-rows: 1fr 38%;
+        grid-template-rows: 1fr 38vh;
     }
     .left-container {
         margin: 0 0 0 0;
@@ -101,5 +101,16 @@ button:hover{
     img {
         height: 416px;
         width: 271px;
+    }
+}
+@media (max-width: 300px) {
+    main {
+        margin-top: 40%;
+    }
+    .same-line {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
     }
 }
